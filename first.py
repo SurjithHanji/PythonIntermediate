@@ -1,11 +1,19 @@
-from collections import Counter
-a="aaaaaaabbbbbbbbbbcccccccccc"
-my_counter=Counter(a)
-print(my_counter)
+zeros=[0]*10
+print(zeros)
 
-print(my_counter.items())
-print(my_counter.keys())
-print(my_counter.values())
+ones=[0,1]*10
+print(ones)
 
-print(my_counter.most_common(2))
-print(my_counter.elements())
+se="ab"*10
+print(se)
+
+def food(a,b,*args,**kwargs):
+    print(a,b)
+    print(a)
+    for arg in args:
+        print(arg)
+
+    for key in kwargs:
+        print(key,kwargs[key])
+
+food(1,2,3,4,six=6,seven=7)
